@@ -1,0 +1,266 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: 600;
+  color: #333;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  font-size: 20px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.advertisement-list {
+  margin-top: 30px;
+}
+
+.advertisement {
+  background-color: #fafafa;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.advertisement h3 {
+  margin-top: 0;
+  font-size: 1.4em;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.advertisement p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.advertisement p strong {
+  color: #333;
+}
+
+.advertisement button {
+  background-color: #007bff;
+  color: white;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.advertisement button:first-of-type {
+  margin-right: 10px;
+}
+
+.advertisement button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.advertisement button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #555;
+}
+
+form input, form textarea, form select {
+  padding: 12px;
+  font-size: 1em;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+  text-align: center;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+form button {
+  background-color: #28a745;
+  color: white;
+  font-size: 1.2em;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+form button:disabled {
+  background-color: #ccc;
+}
+
+.form-container {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.form-container.show {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.form-container.hide {
+  max-height: 0;
+  opacity: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.edit-form {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form h3 {
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  color: #333;
+}
+
+
+.filter-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.filter-container label {
+  margin-bottom: 5px;
+}
+
+.filter-input, .filter-select {
+  padding: 10px;
+  font-size: 1em;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.filter-input:focus, .filter-select:focus {
+  border-color: #007bff;
+}
+
+.filter-select {
+  width: 250px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-select:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
