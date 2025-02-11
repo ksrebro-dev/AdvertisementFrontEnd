@@ -14,6 +14,7 @@ Aby uruchomić projekt, wykonaj poniższe kroki:
    git clone https://github.com/ksrebro-dev/AdvertisementFrontEnd.git
    ```
 2. **Otwórz terminal w folderze z projektem**
+   
     Wejdź do folderu, do którego sklonowałeś repozytorium. W terminalu wpisz komendę
    ```bash
    cd AdvertisementFrontEnd
