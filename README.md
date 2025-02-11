@@ -24,7 +24,7 @@ Aby uruchomić projekt, wykonaj poniższe kroki:
    npm start
    ```
     
-Po wykonaniu powyższych kroków, projekt powinien uruchomić się lokalnie na porcie 5000.
+Po wykonaniu powyższych kroków, projekt powinien uruchomić się pod adresem http://localhost:3000/.
 ## Technologie 
 - ReactJS
 - Inne zależności wymienione w package.json
